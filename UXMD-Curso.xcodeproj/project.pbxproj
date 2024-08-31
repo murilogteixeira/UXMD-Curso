@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		698E13142C8021AA00D05F92 /* UXMD_CursoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E13132C8021AA00D05F92 /* UXMD_CursoApp.swift */; };
-		698E13162C8021AA00D05F92 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E13152C8021AA00D05F92 /* ContentView.swift */; };
+		698E13162C8021AA00D05F92 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E13152C8021AA00D05F92 /* ChatCell.swift */; };
 		698E13182C8021AE00D05F92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 698E13172C8021AE00D05F92 /* Assets.xcassets */; };
 		698E131B2C8021AE00D05F92 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 698E131A2C8021AE00D05F92 /* Preview Assets.xcassets */; };
 		698E13252C8021AF00D05F92 /* UXMD_CursoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E13242C8021AF00D05F92 /* UXMD_CursoTests.swift */; };
@@ -16,8 +16,13 @@
 		698E13312C8021AF00D05F92 /* UXMD_CursoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E13302C8021AF00D05F92 /* UXMD_CursoUITestsLaunchTests.swift */; };
 		698E133E2C82C1D800D05F92 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E133D2C82C1D800D05F92 /* Chat.swift */; };
 		698E13432C82C23700D05F92 /* chat.json in Resources */ = {isa = PBXBuildFile; fileRef = 698E13422C82C23700D05F92 /* chat.json */; };
-		698E13452C82C67200D05F92 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E13442C82C67200D05F92 /* HomeView.swift */; };
+		698E13452C82C67200D05F92 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E13442C82C67200D05F92 /* TabBarView.swift */; };
 		698E13472C82C9B100D05F92 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E13462C82C9B100D05F92 /* ChatView.swift */; };
+		698E13492C82CE6100D05F92 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E13482C82CE6100D05F92 /* Colors.swift */; };
+		698E134E2C836C5500D05F92 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E134D2C836C5500D05F92 /* SettingsView.swift */; };
+		698E13502C8370C700D05F92 /* CheckboxLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E134F2C8370C700D05F92 /* CheckboxLabelView.swift */; };
+		698E13532C83762200D05F92 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 698E13522C83762200D05F92 /* Lottie */; };
+		698E13562C8376CC00D05F92 /* checkbox.json in Resources */ = {isa = PBXBuildFile; fileRef = 698E13552C8376CC00D05F92 /* checkbox.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +45,7 @@
 /* Begin PBXFileReference section */
 		698E13102C8021AA00D05F92 /* UXMD-Curso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UXMD-Curso.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		698E13132C8021AA00D05F92 /* UXMD_CursoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UXMD_CursoApp.swift; sourceTree = "<group>"; };
-		698E13152C8021AA00D05F92 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		698E13152C8021AA00D05F92 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		698E13172C8021AE00D05F92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		698E131A2C8021AE00D05F92 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		698E13202C8021AF00D05F92 /* UXMD-CursoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UXMD-CursoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,8 +55,12 @@
 		698E13302C8021AF00D05F92 /* UXMD_CursoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UXMD_CursoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		698E133D2C82C1D800D05F92 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		698E13422C82C23700D05F92 /* chat.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = chat.json; sourceTree = "<group>"; };
-		698E13442C82C67200D05F92 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		698E13442C82C67200D05F92 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		698E13462C82C9B100D05F92 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		698E13482C82CE6100D05F92 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		698E134D2C836C5500D05F92 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		698E134F2C8370C700D05F92 /* CheckboxLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxLabelView.swift; sourceTree = "<group>"; };
+		698E13552C8376CC00D05F92 /* checkbox.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = checkbox.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				698E13532C83762200D05F92 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +115,7 @@
 				698E13412C82C1EB00D05F92 /* ViewModel */,
 				698E13402C82C1E500D05F92 /* View */,
 				698E133F2C82C1DF00D05F92 /* Model */,
+				698E13542C8376B400D05F92 /* Resources */,
 				698E13132C8021AA00D05F92 /* UXMD_CursoApp.swift */,
 				698E13172C8021AE00D05F92 /* Assets.xcassets */,
 				698E13192C8021AE00D05F92 /* Preview Content */,
@@ -140,8 +151,8 @@
 		698E133F2C82C1DF00D05F92 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				698E13422C82C23700D05F92 /* chat.json */,
 				698E133D2C82C1D800D05F92 /* Chat.swift */,
+				698E13482C82CE6100D05F92 /* Colors.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -149,9 +160,9 @@
 		698E13402C82C1E500D05F92 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				698E13152C8021AA00D05F92 /* ContentView.swift */,
-				698E13442C82C67200D05F92 /* HomeView.swift */,
-				698E13462C82C9B100D05F92 /* ChatView.swift */,
+				698E134B2C836BAC00D05F92 /* TabBarView */,
+				698E134A2C836B9700D05F92 /* Chat */,
+				698E134C2C836C4000D05F92 /* Settings */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,6 +172,41 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		698E134A2C836B9700D05F92 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				698E13462C82C9B100D05F92 /* ChatView.swift */,
+				698E13152C8021AA00D05F92 /* ChatCell.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		698E134B2C836BAC00D05F92 /* TabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				698E13442C82C67200D05F92 /* TabBarView.swift */,
+			);
+			path = TabBarView;
+			sourceTree = "<group>";
+		};
+		698E134C2C836C4000D05F92 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				698E134D2C836C5500D05F92 /* SettingsView.swift */,
+				698E134F2C8370C700D05F92 /* CheckboxLabelView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		698E13542C8376B400D05F92 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				698E13422C82C23700D05F92 /* chat.json */,
+				698E13552C8376CC00D05F92 /* checkbox.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +225,9 @@
 			dependencies = (
 			);
 			name = "UXMD-Curso";
+			packageProductDependencies = (
+				698E13522C83762200D05F92 /* Lottie */,
+			);
 			productName = "UXMD-Curso";
 			productReference = 698E13102C8021AA00D05F92 /* UXMD-Curso.app */;
 			productType = "com.apple.product-type.application";
@@ -251,6 +300,9 @@
 				Base,
 			);
 			mainGroup = 698E13072C8021AA00D05F92;
+			packageReferences = (
+				698E13512C83762200D05F92 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 698E13112C8021AA00D05F92 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -267,6 +319,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				698E13562C8376CC00D05F92 /* checkbox.json in Resources */,
 				698E13432C82C23700D05F92 /* chat.json in Resources */,
 				698E131B2C8021AE00D05F92 /* Preview Assets.xcassets in Resources */,
 				698E13182C8021AE00D05F92 /* Assets.xcassets in Resources */,
@@ -294,8 +347,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				698E13162C8021AA00D05F92 /* ContentView.swift in Sources */,
-				698E13452C82C67200D05F92 /* HomeView.swift in Sources */,
+				698E134E2C836C5500D05F92 /* SettingsView.swift in Sources */,
+				698E13162C8021AA00D05F92 /* ChatCell.swift in Sources */,
+				698E13492C82CE6100D05F92 /* Colors.swift in Sources */,
+				698E13452C82C67200D05F92 /* TabBarView.swift in Sources */,
+				698E13502C8370C700D05F92 /* CheckboxLabelView.swift in Sources */,
 				698E13472C82C9B100D05F92 /* ChatView.swift in Sources */,
 				698E133E2C82C1D800D05F92 /* Chat.swift in Sources */,
 				698E13142C8021AA00D05F92 /* UXMD_CursoApp.swift in Sources */,
@@ -622,6 +678,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		698E13512C83762200D05F92 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		698E13522C83762200D05F92 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 698E13512C83762200D05F92 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 698E13082C8021AA00D05F92 /* Project object */;
 }

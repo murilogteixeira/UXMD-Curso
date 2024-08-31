@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ChatCell.swift
 //  UXMD-Curso
 //
 //  Created by Murilo Teixeira on 29/08/24.
@@ -30,10 +30,12 @@ struct ChatCell: View {
             VStack(alignment: .leading) {
                 Text(chat.name)
                     .font(.system(size: 16))
+                    .foregroundStyle(Colors.textHigh.color)
                 
                 Text(chat.message)
-                    .font(.system(size: 14))
+                    .font(.system(size: 14, weight: chat.unreadedMessagesCount > 0 ? .medium : .regular))
                     .lineLimit(2)
+                    .foregroundStyle(Colors.textMedium.color)
             }
             
             Spacer()
@@ -42,6 +44,7 @@ struct ChatCell: View {
                 Text(dateFormatter.string(from: chat.date).replacingOccurrences(of: ", ", with: "\n"))
                     .font(.system(size: 12))
                     .multilineTextAlignment(.trailing)
+                    .foregroundStyle(Colors.textMedium.color)
                 
                 if chat.unreadedMessagesCount > 0 {
                     Circle()
@@ -51,11 +54,10 @@ struct ChatCell: View {
                                 .foregroundStyle(.white)
                         }
                         .frame(width: 22, height: 22)
-                        .foregroundStyle(.purple)
+                        .foregroundStyle(Colors.highlight.color)
                 }
             }
         }
-        .padding()
     }
 }
 
