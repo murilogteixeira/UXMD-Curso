@@ -14,6 +14,10 @@
 		698E13252C8021AF00D05F92 /* UXMD_CursoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E13242C8021AF00D05F92 /* UXMD_CursoTests.swift */; };
 		698E132F2C8021AF00D05F92 /* UXMD_CursoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E132E2C8021AF00D05F92 /* UXMD_CursoUITests.swift */; };
 		698E13312C8021AF00D05F92 /* UXMD_CursoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E13302C8021AF00D05F92 /* UXMD_CursoUITestsLaunchTests.swift */; };
+		698E133E2C82C1D800D05F92 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E133D2C82C1D800D05F92 /* Chat.swift */; };
+		698E13432C82C23700D05F92 /* chat.json in Resources */ = {isa = PBXBuildFile; fileRef = 698E13422C82C23700D05F92 /* chat.json */; };
+		698E13452C82C67200D05F92 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E13442C82C67200D05F92 /* HomeView.swift */; };
+		698E13472C82C9B100D05F92 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E13462C82C9B100D05F92 /* ChatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		698E132A2C8021AF00D05F92 /* UXMD-CursoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UXMD-CursoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		698E132E2C8021AF00D05F92 /* UXMD_CursoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UXMD_CursoUITests.swift; sourceTree = "<group>"; };
 		698E13302C8021AF00D05F92 /* UXMD_CursoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UXMD_CursoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		698E133D2C82C1D800D05F92 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		698E13422C82C23700D05F92 /* chat.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = chat.json; sourceTree = "<group>"; };
+		698E13442C82C67200D05F92 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		698E13462C82C9B100D05F92 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,10 @@
 		698E13122C8021AA00D05F92 /* UXMD-Curso */ = {
 			isa = PBXGroup;
 			children = (
+				698E13412C82C1EB00D05F92 /* ViewModel */,
+				698E13402C82C1E500D05F92 /* View */,
+				698E133F2C82C1DF00D05F92 /* Model */,
 				698E13132C8021AA00D05F92 /* UXMD_CursoApp.swift */,
-				698E13152C8021AA00D05F92 /* ContentView.swift */,
 				698E13172C8021AE00D05F92 /* Assets.xcassets */,
 				698E13192C8021AE00D05F92 /* Preview Content */,
 			);
@@ -125,6 +135,32 @@
 				698E13302C8021AF00D05F92 /* UXMD_CursoUITestsLaunchTests.swift */,
 			);
 			path = "UXMD-CursoUITests";
+			sourceTree = "<group>";
+		};
+		698E133F2C82C1DF00D05F92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				698E13422C82C23700D05F92 /* chat.json */,
+				698E133D2C82C1D800D05F92 /* Chat.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		698E13402C82C1E500D05F92 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				698E13152C8021AA00D05F92 /* ContentView.swift */,
+				698E13442C82C67200D05F92 /* HomeView.swift */,
+				698E13462C82C9B100D05F92 /* ChatView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		698E13412C82C1EB00D05F92 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				698E13432C82C23700D05F92 /* chat.json in Resources */,
 				698E131B2C8021AE00D05F92 /* Preview Assets.xcassets in Resources */,
 				698E13182C8021AE00D05F92 /* Assets.xcassets in Resources */,
 			);
@@ -258,6 +295,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				698E13162C8021AA00D05F92 /* ContentView.swift in Sources */,
+				698E13452C82C67200D05F92 /* HomeView.swift in Sources */,
+				698E13472C82C9B100D05F92 /* ChatView.swift in Sources */,
+				698E133E2C82C1D800D05F92 /* Chat.swift in Sources */,
 				698E13142C8021AA00D05F92 /* UXMD_CursoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

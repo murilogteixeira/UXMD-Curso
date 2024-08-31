@@ -1,0 +1,142 @@
+[
+    {
+        "nome": "Alice",
+        "mensagem": "Olá, como você está?",
+        "data_hora": "2024-08-30T10:15:30Z",
+        "msgs_nao_lidas": 2,
+        "avatar_url": "https://api.dicebear.com/9.x/adventurer/png?seed=Alice&size=96"
+    },
+    {
+        "nome": "Bob",
+        "mensagem": "Vamos nos encontrar hoje?",
+        "data_hora": "2024-08-30T09:45:00Z",
+        "msgs_nao_lidas": 0,
+        "avatar_url": "https://api.dicebear.com/9.x/adventurer/png?seed=Bob&size=96"
+    },
+    {
+        "nome": "Carlos",
+        "mensagem": "Enviei o documento por e-mail.",
+        "data_hora": "2024-08-29T15:20:10Z",
+        "msgs_nao_lidas": 1,
+        "avatar_url": "https://api.dicebear.com/9.x/adventurer/png?seed=Carlos&size=96"
+    },
+    {
+        "nome": "Diana",
+        "mensagem": "O projeto está quase pronto.",
+        "data_hora": "2024-08-29T14:55:45Z",
+        "msgs_nao_lidas": 0,
+        "avatar_url": "https://api.dicebear.com/9.x/adventurer/png?seed=Diana&size=96"
+    },
+    {
+        "nome": "Elena",
+        "mensagem": "Podemos marcar a reunião para amanhã?",
+        "data_hora": "2024-08-28T16:30:00Z",
+        "msgs_nao_lidas": 3,
+        "avatar_url": "https://api.dicebear.com/9.x/adventurer/png?seed=Elena&size=96"
+    },
+    {
+        "nome": "Fábio",
+        "mensagem": "Estou com um problema no código.",
+        "data_hora": "2024-08-28T12:10:20Z",
+        "msgs_nao_lidas": 0,
+        "avatar_url": "https://api.dicebear.com/9.x/adventurer/png?seed=Fabio&size=96"
+    },
+    {
+        "nome": "Gabriela",
+        "mensagem": "Bom dia! Como foi o final de semana?",
+        "data_hora": "2024-08-27T08:00:00Z",
+        "msgs_nao_lidas": 1,
+        "avatar_url": "https://api.dicebear.com/9.x/adventurer/png?seed=Gabriela&size=96"
+    },
+    {
+        "nome": "Hugo",
+        "mensagem": "Você viu aquele filme novo?",
+        "data_hora": "2024-08-26T19:25:00Z",
+        "msgs_nao_lidas": 0,
+        "avatar_url": "https://api.dicebear.com/9.x/adventurer/png?seed=Hugo&size=96"
+    },
+    {
+        "nome": "Isabela",
+        "mensagem": "Preciso de ajuda com o relatório.",
+        "data_hora": "2024-08-26T14:10:30Z",
+        "msgs_nao_lidas": 2,
+        "avatar_url": "https://api.dicebear.com/9.x/adventurer/png?seed=Isabela&size=96"
+    },
+    {
+        "nome": "João",
+        "mensagem": "Quando você estará disponível para uma chamada?",
+        "data_hora": "2024-08-25T17:45:15Z",
+        "msgs_nao_lidas": 0,
+        "avatar_url": "https://api.dicebear.com/9.x/adventurer/png?seed=Joao&size=96"
+    },
+    {
+        "nome": "Karla",
+        "mensagem": "Parabéns pelo seu trabalho!",
+        "data_hora": "2024-08-25T10:00:00Z",
+        "msgs_nao_lidas": 1,
+        "avatar_url": "https://api.dicebear.com/9.x/adventurer/png?seed=Karla&size=96"
+    },
+    {
+        "nome": "Lucas",
+        "mensagem": "Vamos ao evento amanhã?",
+        "data_hora": "2024-08-24T20:30:00Z",
+        "msgs_nao_lidas": 0,
+        "avatar_url": "https://api.dicebear.com/9.x/adventurer/png?seed=Lucas&size=96"
+    },
+    {
+        "nome": "Maria",
+        "mensagem": "Você recebeu minha mensagem anterior?",
+        "data_hora": "2024-08-24T15:15:00Z",
+        "msgs_nao_lidas": 2,
+        "avatar_url": "https://api.dicebear.com/9.x/adventurer/png?seed=Maria&size=96"
+    },
+    {
+        "nome": "Nicolas",
+        "mensagem": "Preciso falar com você urgentemente.",
+        "data_hora": "2024-08-23T18:00:30Z",
+        "msgs_nao_lidas": 3,
+        "avatar_url": "https://api.dicebear.com/9.x/adventurer/png?seed=Nicolas&size=96"
+    },
+    {
+        "nome": "Olivia",
+        "mensagem": "Não se esqueça da nossa reunião!",
+        "data_hora": "2024-08-23T10:25:00Z",
+        "msgs_nao_lidas": 0,
+        "avatar_url": "https://api.dicebear.com/9.x/adventurer/png?seed=Olivia&size=96"
+    },
+    {
+        "nome": "Paulo",
+        "mensagem": "Gostaria de discutir o novo projeto.",
+        "data_hora": "2024-08-22T14:50:00Z",
+        "msgs_nao_lidas": 1,
+        "avatar_url": "https://api.dicebear.com/9.x/adventurer/png?seed=Paulo&size=96"
+    },
+    {
+        "nome": "Quintino",
+        "mensagem": "Estou disponível na parte da tarde.",
+        "data_hora": "2024-08-22T11:30:45Z",
+        "msgs_nao_lidas": 0,
+        "avatar_url": "https://api.dicebear.com/9.x/adventurer/png?seed=Quintino&size=96"
+    },
+    {
+        "nome": "Renata",
+        "mensagem": "Você poderia revisar o código?",
+        "data_hora": "2024-08-21T16:45:00Z",
+        "msgs_nao_lidas": 2,
+        "avatar_url": "https://api.dicebear.com/9.x/adventurer/png?seed=Renata&size=96"
+    },
+    {
+        "nome": "Sérgio",
+        "mensagem": "Tudo certo para amanhã?",
+        "data_hora": "2024-08-21T14:15:30Z",
+        "msgs_nao_lidas": 1,
+        "avatar_url": "https://api.dicebear.com/9.x/adventurer/png?seed=Sergio&size=96"
+    },
+    {
+        "nome": "Tatiana",
+        "mensagem": "Podemos marcar um horário?",
+        "data_hora": "2024-08-20T09:25:00Z",
+        "msgs_nao_lidas": 0,
+        "avatar_url": "https://api.dicebear.com/9.x/adventurer/png?seed=Tatiana&size=96"
+    }
+]
