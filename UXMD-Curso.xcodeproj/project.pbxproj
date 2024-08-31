@@ -23,6 +23,7 @@
 		698E13502C8370C700D05F92 /* CheckboxLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E134F2C8370C700D05F92 /* CheckboxLabelView.swift */; };
 		698E13532C83762200D05F92 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 698E13522C83762200D05F92 /* Lottie */; };
 		698E13562C8376CC00D05F92 /* checkbox.json in Resources */ = {isa = PBXBuildFile; fileRef = 698E13552C8376CC00D05F92 /* checkbox.json */; };
+		698E13592C83984700D05F92 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E13582C83984600D05F92 /* ContactsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		698E134D2C836C5500D05F92 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		698E134F2C8370C700D05F92 /* CheckboxLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxLabelView.swift; sourceTree = "<group>"; };
 		698E13552C8376CC00D05F92 /* checkbox.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = checkbox.json; sourceTree = "<group>"; };
+		698E13582C83984600D05F92 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			children = (
 				698E134B2C836BAC00D05F92 /* TabBarView */,
 				698E134A2C836B9700D05F92 /* Chat */,
+				698E13572C83983500D05F92 /* ContactsView */,
 				698E134C2C836C4000D05F92 /* Settings */,
 			);
 			path = View;
@@ -207,6 +210,14 @@
 				698E13552C8376CC00D05F92 /* checkbox.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		698E13572C83983500D05F92 /* ContactsView */ = {
+			isa = PBXGroup;
+			children = (
+				698E13582C83984600D05F92 /* ContactsView.swift */,
+			);
+			path = ContactsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,6 +364,7 @@
 				698E13452C82C67200D05F92 /* TabBarView.swift in Sources */,
 				698E13502C8370C700D05F92 /* CheckboxLabelView.swift in Sources */,
 				698E13472C82C9B100D05F92 /* ChatView.swift in Sources */,
+				698E13592C83984700D05F92 /* ContactsView.swift in Sources */,
 				698E133E2C82C1D800D05F92 /* Chat.swift in Sources */,
 				698E13142C8021AA00D05F92 /* UXMD_CursoApp.swift in Sources */,
 			);

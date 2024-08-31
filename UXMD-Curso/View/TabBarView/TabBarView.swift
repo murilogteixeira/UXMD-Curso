@@ -16,7 +16,7 @@ struct TabBarView: View {
             ChatView(chat: $chat)
                 .tabItem { Label("Chats", systemImage: "house") }
             
-            Text("Contacts")
+            ContactsView(chat: $chat)
                 .tabItem { Label("Contacts", systemImage: "person.3") }
             
             NavigationView {
