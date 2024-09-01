@@ -13,6 +13,7 @@ enum Colors: String {
     case highlight = "#6750A4"
     case textHigh = "#001E2F"
     case textMedium = "#74777F"
+    case primary = "#65558F"
     
     var color: Color {
         Color(hex: rawValue)

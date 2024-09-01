@@ -13,7 +13,7 @@ struct TabBarView: View {
     
     var body: some View {
         TabView {
-            ChatView(chat: $chat)
+            ChatView(chat: chat)
                 .tabItem { Label("Chats", systemImage: "house") }
             
             ContactsView(chat: $chat)
