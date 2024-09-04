@@ -11,10 +11,10 @@ import Lottie
 struct CustomLottieView: View {
 
     let lottieName: String
-    @State var playbackMode: LottiePlaybackMode = .paused
+    @State var playbackMode: LottiePlaybackMode = .playing(.toProgress(1, loopMode: .loop))
     @State var loopMode: LottieLoopMode = .loop
     @State var buttonIndex = 0
-    @State var playButtonIndex = 2
+    @State var playButtonIndex = 0
     @State var fromProgress = ""
     @State var toProgress = ""
 
