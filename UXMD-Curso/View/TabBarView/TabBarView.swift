@@ -10,7 +10,7 @@ import SwiftUI
 struct TabBarView: View {
     
     @State var chat = Chat.mock
-    
+
     var body: some View {
         TabView {
             ChatView(chat: chat)

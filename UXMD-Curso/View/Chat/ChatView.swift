@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ChatView: View {
-    
+
     @State var chat: Chat
     @State private var previousOffset: CGFloat = 0
     @State var fabIsExpanded = false
@@ -37,6 +37,19 @@ struct ChatView: View {
                 Spacer()
 
                 if snackbarShouldAppear {
+
+
+
+
+
+
+
+
+
+
+
+                    // MARK: - STEP 3: Snackbar
+                    /*
                     HStack {
                         Text("Item deletado")
                             .foregroundStyle(.white)
@@ -48,33 +61,75 @@ struct ChatView: View {
                         Rectangle()
                             .fill(Colors.surface.color)
                             .cornerRadius(4)
+
+
+
+
+
+
+
+                     
                             .opacity(snackbarIsEnabled ? 1 : 0)
-                            // MARK: - With animations
-                            //*
-                            .animation(.linear(duration: 0.150), value: snackbarIsEnabled)
-                            // */
+
+
+
+                            // MARK: - Opacity animation
+                            // .animation(.linear(duration: 0.150), value: snackbarIsEnabled)
+
+
+
+
                             .scaleEffect(CGSize(width: 1, height: snackbarScaled ? scale : 0), anchor: .bottom)
-                            // MARK: - With animations
-                            //*
-                            .animation(.timingCurve(0.2, 0, 0, 1, duration: 0.300), value: scale)
-                            // */
+
+
+
+
+
+                            // MARK: - Scale animations
+                            // .animation(.timingCurve(0.2, 0, 0, 1, duration: 0.300), value: scale)
                     }
+
+
+
+
+
+
+
+
+
                     .onAppear {
-                        // MARK: - With animations
-                        //*
-                        withAnimation {
-                        scale = 1
-                        snackbarIsEnabled = true
-                        snackbarScaled = true
-                        }
-                        // */
 
                         // MARK: - With animations
-                        /*
+                        // withAnimation {
+                        // scale = 1
+                        // snackbarIsEnabled = true
+                        // snackbarScaled = true
+                        // }
+
+
+
+
+
+
+                        // MARK: - Without animations
                         snackbarIsEnabled = true
                         snackbarScaled = true
-                        // */
                     }
+                     // */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                 }
 
@@ -83,20 +138,68 @@ struct ChatView: View {
 
                 HStack {
                     Spacer()
-                    
+
+
+
+
+                    // MARK: STEP 1: Edit Button (FAB)
                     HStack(spacing: 12) {
+
+
+
+
+
+
+
+
+
+
+
+
                         Image(systemName: "pencil")
                             .frame(width: 24, height: 24)
                             .fontWeight(.black)
-                            // MARK: - With animations
-                            //*
-                            .animation(.timingCurve(0.4, 0, 0.2, 1, duration: 0.300), value: fabIsExpanded)
-                            // */
+
+
+
+
+
+
+
+
+
+
+
+
+                        // Text visibility condition
 
                         if fabIsExpanded {
+
+
+
                             Text("Editar")
                                 .font(.system(size: 14, weight: .medium))
+
+
+                                // MARK: - Text opacity animation
+                                // .animation(.linear(duration: fabIsExpanded ? 0.150 : 0.100), value: fabIsExpanded)
+
+
+
                         }
+
+
+
+
+
+
+
+
+
+
+
+
+
                     }
                     .padding(16)
                     .background(Colors.primary.color)
@@ -104,34 +207,73 @@ struct ChatView: View {
                     .foregroundStyle(.white)
                     .shadow(radius: 10, y: 8)
                     .shadow(radius: 4, y: 1)
-                    // MARK: - With animations
-                    //*
-                    .animation(
-                        .timingCurve(0.4, 0, 0.2, 1, duration: 0.300),
-                        value: fabIsExpanded
-                    )
-                    // */
-                    .onTapGesture {
-                        // MARK: - With animations
-                        //*
-                        withAnimation {
-                            fabIsExpanded.toggle()
-                            editMode = fabIsExpanded ? .active : .inactive
-                        }
-                        // */
 
-                        // MARK: - With animations
-                        /*
-                        fabIsExpanded.toggle()
-                        editMode = fabIsExpanded ? .active : .inactive
-                        // */
+
+
+
+
+
+
+
+
+                    // MARK: - Expand and collapse animation
+                    // .animation(
+                    //     .timingCurve(0.4, 0, 0.2, 1, duration: 0.300),
+                    //     value: fabIsExpanded
+                    // )
+
+
+
+
+
+
+
+
+
+
+
+                    .onTapGesture {
+
+
+                        // MARK: - STEP 2: Enable animations
+
+                        // MARK: - Collapse and expand with motion
+                        // withAnimation {
+                        //     fabIsExpanded.toggle()
+                        //     editMode = fabIsExpanded ? .active : .inactive
+                        // }
+
+
+
+
+
+
+
+
+                        // MARK: - Collapse and expand without motion
+                         fabIsExpanded.toggle()
+                         editMode = fabIsExpanded ? .active : .inactive
+
+
+
+
                     }
+
+
+
+
+
+
+
+
+
+
                 }
             }
             .padding(24)
         }
     }
-    
+
     private func deleteItems(at offset: IndexSet) {
         chat.remove(atOffsets: offset)
 
@@ -139,24 +281,41 @@ struct ChatView: View {
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
 
+
+
+
+
+
+
+
             // MARK: - With animations
-            /*
-            withAnimation {
-                snackbarIsEnabled = false
-            } completion: {
-                snackbarShouldAppear = false
-                snackbarScaled = false
-                scale = 0
-            }
-            // */
+            // withAnimation {
+            //     snackbarIsEnabled = false
+            // } completion: {
+            //     snackbarShouldAppear = false
+            //     snackbarScaled = false
+            //     scale = 0
+            // }
+
+
+
+
+
+
+
+
 
             // MARK: - Without animations
-            //*
             snackbarIsEnabled = false
             snackbarShouldAppear = false
             snackbarScaled = false
             scale = 0
-            // */
+
+
+
+
+
+
         }
     }
 }
