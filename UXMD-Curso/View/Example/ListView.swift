@@ -30,15 +30,22 @@ struct ListView: View {
 
 #Preview {
     Group {
-        ListView(items: [.init(name: "Test", view: Text("Test"), items: nil)])
+        ListView(
+            items: [
+                .init("Test") {
+                    Text("Test")
+                }
+            ]
+        )
 
         ListView(
             items: [
                 .init(
-                    name: "Test",
-                    view: nil,
+                    "Test",
                     items: Array(
-                        repeating: .init(name: "Test", view: Text("Test"), items: nil),
+                        repeating: .init("Test") {
+                            Text("Test")
+                        },
                         count: 5
                     )
                 )
