@@ -24,6 +24,12 @@
 		698E13532C83762200D05F92 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 698E13522C83762200D05F92 /* Lottie */; };
 		698E13562C8376CC00D05F92 /* checkbox.json in Resources */ = {isa = PBXBuildFile; fileRef = 698E13552C8376CC00D05F92 /* checkbox.json */; };
 		698E13592C83984700D05F92 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E13582C83984600D05F92 /* ContactsView.swift */; };
+		698E13602C87FFE700D05F92 /* Lottie1.json in Resources */ = {isa = PBXBuildFile; fileRef = 698E135F2C87FFE700D05F92 /* Lottie1.json */; };
+		698E13622C87FFEE00D05F92 /* Lottie2.json in Resources */ = {isa = PBXBuildFile; fileRef = 698E13612C87FFED00D05F92 /* Lottie2.json */; };
+		698E13642C87FFF600D05F92 /* Lottie3.json in Resources */ = {isa = PBXBuildFile; fileRef = 698E13632C87FFF500D05F92 /* Lottie3.json */; };
+		698E13672C88002D00D05F92 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E13662C88002D00D05F92 /* ExampleView.swift */; };
+		698E13692C88024000D05F92 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E13682C88024000D05F92 /* ListView.swift */; };
+		698E136B2C8802BB00D05F92 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E136A2C8802BA00D05F92 /* LottieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +69,12 @@
 		698E134F2C8370C700D05F92 /* CheckboxLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxLabelView.swift; sourceTree = "<group>"; };
 		698E13552C8376CC00D05F92 /* checkbox.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = checkbox.json; sourceTree = "<group>"; };
 		698E13582C83984600D05F92 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		698E135F2C87FFE700D05F92 /* Lottie1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Lottie1.json; sourceTree = "<group>"; };
+		698E13612C87FFED00D05F92 /* Lottie2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Lottie2.json; sourceTree = "<group>"; };
+		698E13632C87FFF500D05F92 /* Lottie3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Lottie3.json; sourceTree = "<group>"; };
+		698E13662C88002D00D05F92 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		698E13682C88024000D05F92 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		698E136A2C8802BA00D05F92 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +174,7 @@
 		698E13402C82C1E500D05F92 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				698E13652C88001700D05F92 /* Example */,
 				698E134B2C836BAC00D05F92 /* TabBarView */,
 				698E134A2C836B9700D05F92 /* Chat */,
 				698E13572C83983500D05F92 /* ContactsView */,
@@ -206,6 +219,9 @@
 		698E13542C8376B400D05F92 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				698E135F2C87FFE700D05F92 /* Lottie1.json */,
+				698E13612C87FFED00D05F92 /* Lottie2.json */,
+				698E13632C87FFF500D05F92 /* Lottie3.json */,
 				698E13422C82C23700D05F92 /* chat.json */,
 				698E13552C8376CC00D05F92 /* checkbox.json */,
 			);
@@ -218,6 +234,16 @@
 				698E13582C83984600D05F92 /* ContactsView.swift */,
 			);
 			path = ContactsView;
+			sourceTree = "<group>";
+		};
+		698E13652C88001700D05F92 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				698E13662C88002D00D05F92 /* ExampleView.swift */,
+				698E13682C88024000D05F92 /* ListView.swift */,
+				698E136A2C8802BA00D05F92 /* LottieView.swift */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +359,9 @@
 				698E13562C8376CC00D05F92 /* checkbox.json in Resources */,
 				698E13432C82C23700D05F92 /* chat.json in Resources */,
 				698E131B2C8021AE00D05F92 /* Preview Assets.xcassets in Resources */,
+				698E13602C87FFE700D05F92 /* Lottie1.json in Resources */,
+				698E13622C87FFEE00D05F92 /* Lottie2.json in Resources */,
+				698E13642C87FFF600D05F92 /* Lottie3.json in Resources */,
 				698E13182C8021AE00D05F92 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,7 +395,10 @@
 				698E13472C82C9B100D05F92 /* ChatView.swift in Sources */,
 				698E13592C83984700D05F92 /* ContactsView.swift in Sources */,
 				698E133E2C82C1D800D05F92 /* Chat.swift in Sources */,
+				698E13692C88024000D05F92 /* ListView.swift in Sources */,
 				698E13142C8021AA00D05F92 /* UXMD_CursoApp.swift in Sources */,
+				698E13672C88002D00D05F92 /* ExampleView.swift in Sources */,
+				698E136B2C8802BB00D05F92 /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
