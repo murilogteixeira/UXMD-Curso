@@ -14,6 +14,7 @@ struct CheckboxLabelView: View {
     @State var previousState: CheckboxState = .unchecked
     @State var state: CheckboxState
     @State var playbackMode: LottiePlaybackMode = .paused
+    @State var currentFrame: AnimationFrameTime?
     var onStateChangeCompletion: ((CheckboxState) -> Void)?
 
     var body: some View {
@@ -38,16 +39,24 @@ struct CheckboxLabelView: View {
             default:
                 (fromFrame, toFrame) = (30, 59)
             }
-            
+
+            #if ENABLE_ANIMATIONS
             playbackMode = .playing(.fromFrame(fromFrame, toFrame: toFrame, loopMode: .playOnce))
+            #else
+            currentFrame = toFrame
+            #endif
         } label: {
             HStack {
                 LottieView(animation: .named("checkbox"))
+                    #if ENABLE_ANIMATIONS
                     .playbackMode(playbackMode)
                     .animationDidFinish { _ in
-                      playbackMode = .paused
+                        playbackMode = .paused
                     }
-                
+                    #else
+                    .currentFrame(currentFrame)
+                    #endif
+
                 Text(title)
             }
         }

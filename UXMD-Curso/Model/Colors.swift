@@ -14,7 +14,8 @@ enum Colors: String {
     case textHigh = "#001E2F"
     case textMedium = "#74777F"
     case primary = "#65558F"
-    
+    case surface = "#322F35"
+
     var color: Color {
         Color(hex: rawValue)
     }

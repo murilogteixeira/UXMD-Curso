@@ -94,8 +94,17 @@ struct SettingsView: View {
                     default:
                         break
                     }
-                    
+
+                    // MARK: - With animations
+                    //*
                     playbackMode = .playing(.fromFrame(frame.from, toFrame: frame.to, loopMode: .playOnce))
+                    // */
+
+                    // MARK: - Without animations
+                    /*
+                    playbackMode = .paused(at: .frame(frame.to))
+                    // */
+
                 } label: {
                     HStack {
                         LottieView(animation: .named("checkbox"))
