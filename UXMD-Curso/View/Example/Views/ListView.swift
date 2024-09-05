@@ -16,10 +16,13 @@ struct ListView: View {
             NavigationLink {
                 if let items = item.items {
                     ListView(items: items)
+                        .navigationTitle(item.name)
                 } else if let view = item.view {
                     AnyView(view)
+                        .navigationTitle(item.name)
                 } else {
                     Text(item.name)
+                        .navigationTitle(item.name)
                 }
             } label: {
                 Text(item.name)

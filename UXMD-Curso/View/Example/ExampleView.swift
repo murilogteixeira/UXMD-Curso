@@ -42,13 +42,13 @@ struct ExampleView: View {
             "Code",
             items: [
                 .init("Opacity") {
-                    Text("Opacity")
+                    OpacityText()
                 },
                 .init("Scale") {
-                    Text("Scale")
+                    ScaledText()
                 },
-                .init("Translation") {
-                    Text("Translation")
+                .init("Position") {
+                    TranslatedText()
                 },
             ]
         )
@@ -57,6 +57,7 @@ struct ExampleView: View {
     var body: some View {
         NavigationView {
             ListView(items: views)
+                .navigationTitle("Animations")
         }
     }
 }
