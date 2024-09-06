@@ -33,6 +33,7 @@
 		698E136D2C895AAC00D05F92 /* ScaledText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E136C2C895AAC00D05F92 /* ScaledText.swift */; };
 		698E136F2C895B3E00D05F92 /* TranslatedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E136E2C895B3E00D05F92 /* TranslatedText.swift */; };
 		698E13712C895D1000D05F92 /* OpacityText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E13702C895D1000D05F92 /* OpacityText.swift */; };
+		698E13742C89604900D05F92 /* NotificationFloater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E13732C89604900D05F92 /* NotificationFloater.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		698E136C2C895AAC00D05F92 /* ScaledText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledText.swift; sourceTree = "<group>"; };
 		698E136E2C895B3E00D05F92 /* TranslatedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatedText.swift; sourceTree = "<group>"; };
 		698E13702C895D1000D05F92 /* OpacityText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpacityText.swift; sourceTree = "<group>"; };
+		698E13732C89604900D05F92 /* NotificationFloater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFloater.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +261,7 @@
 				698E13702C895D1000D05F92 /* OpacityText.swift */,
 				698E136C2C895AAC00D05F92 /* ScaledText.swift */,
 				698E136E2C895B3E00D05F92 /* TranslatedText.swift */,
+				698E13732C89604900D05F92 /* NotificationFloater.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				698E13502C8370C700D05F92 /* CheckboxLabelView.swift in Sources */,
 				698E13472C82C9B100D05F92 /* ChatView.swift in Sources */,
 				698E13592C83984700D05F92 /* ContactsView.swift in Sources */,
+				698E13742C89604900D05F92 /* NotificationFloater.swift in Sources */,
 				698E133E2C82C1D800D05F92 /* Chat.swift in Sources */,
 				698E136F2C895B3E00D05F92 /* TranslatedText.swift in Sources */,
 				698E13692C88024000D05F92 /* ListView.swift in Sources */,

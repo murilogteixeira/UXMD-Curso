@@ -50,6 +50,9 @@ struct ExampleView: View {
                 .init("Position") {
                     TranslatedText()
                 },
+                .init("Notification Floater") {
+                    NotificationFloater()
+                },
             ]
         )
     ]
