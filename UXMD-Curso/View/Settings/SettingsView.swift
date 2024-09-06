@@ -53,68 +53,19 @@ struct SettingsView: View {
     var body: some View {
         List {
 
-            
-            ForEach(notifications, id: \.id) { item in
-                Button {
-                    var newState = CheckboxState.allCases.randomElement() ?? .unchecked
-                    
-                    while newState == state {
-                        newState = CheckboxState.allCases.randomElement() ?? .unchecked
-                    }
-                    
-                    previousState = state
-                    state = newState
-                    print(previousState, ">", state)
-                    
 
+            Section {
+                ForEach(notifications, id: \.id) { item in
+                    Button {
+                        var newState = CheckboxState.allCases.randomElement() ?? .unchecked
 
+                        while newState == state {
+                            newState = CheckboxState.allCases.randomElement() ?? .unchecked
+                        }
 
-
-
-
-
-                    // MARK: - STEP 2: Frames definition
-
-                    var frame: (from: CGFloat, to: CGFloat) = (0, 0)
-                    
-
-
-
-                    switch (previousState, state) {
-
-                    case (.checked, .unchecked):
-                        frame = (from: 30, to: 59)
-
-                    
-
-                    case (.unchecked, .checked):
-                        frame = (from: 0, to: 29)
-                    
-                    
-
-                    case (.checked, .indeterminated):
-                        frame = (from: 60, to: 89)
-                    
-                    
-
-                    case (.indeterminated, .checked):
-                        frame = (from: 90, to: 118)
-                    
-                    
-
-                    case (.unchecked, .indeterminated):
-                        frame = (from: 120, to: 148)
-                    
-                    
-
-                    case (.indeterminated, .unchecked):
-                        frame = (from: 150, to: 180)
-                    
-
-
-                    default:
-                        break
-                    }
+                        previousState = state
+                        state = newState
+                        print(previousState, ">", state)
 
 
 
@@ -123,32 +74,48 @@ struct SettingsView: View {
 
 
 
+                        // MARK: - STEP 2: Frames definition
+
+                        var frame: (from: CGFloat, to: CGFloat) = (0, 0)
 
 
 
 
+                        switch (previousState, state) {
+
+                        case (.checked, .unchecked):
+                            frame = (from: 30, to: 59)
 
 
 
-
-                    // MARK: STEP 1: Lottie animation play
-
-
-                    // MARK: - Lottie with animations
-                    // playbackMode = .playing(.fromFrame(frame.from, toFrame: frame.to, loopMode: .playOnce))
+                        case (.unchecked, .checked):
+                            frame = (from: 0, to: 29)
 
 
 
-
-
-                    // MARK: - Lottie without animations
-                    playbackMode = .paused(at: .frame(frame.to))
-
+                        case (.checked, .indeterminated):
+                            frame = (from: 60, to: 89)
 
 
 
+                        case (.indeterminated, .checked):
+                            frame = (from: 90, to: 118)
 
-                    
+
+
+                        case (.unchecked, .indeterminated):
+                            frame = (from: 120, to: 148)
+
+
+
+                        case (.indeterminated, .unchecked):
+                            frame = (from: 150, to: 180)
+
+
+
+                        default:
+                            break
+                        }
 
 
 
@@ -164,17 +131,64 @@ struct SettingsView: View {
 
 
 
-                } label: {
-                    HStack {
-                        LottieView(animation: .named("checkbox"))
-                            .playbackMode(playbackMode)
-                            .animationDidFinish { _ in
-                                playbackMode = .paused
-                            }
-                        
-                        Text(item.title)
+
+                        // MARK: STEP 1: Lottie animation play
+
+
+                        // MARK: - Lottie with animations
+                        // playbackMode = .playing(.fromFrame(frame.from, toFrame: frame.to, loopMode: .playOnce))
+
+
+
+
+
+                        // MARK: - Lottie without animations
+                        playbackMode = .paused(at: .frame(frame.to))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    } label: {
+                        HStack {
+                            LottieView(animation: .named("checkbox"))
+                                .playbackMode(playbackMode)
+                                .animationDidFinish { _ in
+                                    playbackMode = .paused
+                                }
+
+                            Text(item.title)
+                        }
                     }
                 }
+            } header: {
+                Text("Checkbox")
+            }
+
+            Section {
+                NavigationLink {
+                    ExampleView()
+                } label: {
+                    Text("Our example")
+                }
+            } header: {
+                Text("Others")
             }
         }
         .listStyle(PlainListStyle())

@@ -58,10 +58,10 @@ struct ExampleView: View {
     ]
 
     var body: some View {
-        NavigationView {
+//        NavigationView {
             ListView(items: views)
                 .navigationTitle("Animations")
-        }
+//        }
     }
 }
 
